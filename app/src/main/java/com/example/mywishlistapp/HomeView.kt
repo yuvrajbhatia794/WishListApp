@@ -119,7 +119,7 @@ fun HomeView(modifier: Modifier = Modifier, navController: NavController, viewMo
 fun WishItem(wish: Wish, onClick: ()-> Unit) {
     Card ( modifier = Modifier.fillMaxWidth().padding(start = 8.dp, end = 8.dp, top = 8.dp, bottom = 8.dp).clickable { onClick() },
         elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
-        colors = CardDefaults.cardColors(containerColor = Color.White)
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer)
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text(text = wish.title, style = MaterialTheme.typography.titleMedium)

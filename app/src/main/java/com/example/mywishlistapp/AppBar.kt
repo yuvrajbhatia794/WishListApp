@@ -2,6 +2,7 @@ package com.example.mywishlistapp
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.IconButton
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -37,10 +38,10 @@ fun AppBarView(
 
     TopAppBar(
         title = {Text (text = title,
-        color = colorResource(id = R.color.white),
+        color = MaterialTheme.colors.onPrimary,
         modifier = Modifier.padding(start = 8.dp)) },
-        backgroundColor = colorResource(id = R.color.app_bar_color),
-        contentColor = colorResource(id = R.color.black),
+        backgroundColor = MaterialTheme.colors.primary,
+        contentColor = MaterialTheme.colors.onPrimary,
         elevation = 4.dp,
         navigationIcon = navigationIcon
 
